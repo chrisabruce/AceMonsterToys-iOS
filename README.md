@@ -1,4 +1,6 @@
-AMT-Unlocker-iOS
+Ace Monster Toys - iOS App
 ================
 
-iOS version of Door Unlocker for Ace Monster Toys
+The iOS app for Ace Monster Toys.
+
+Currently supporting door unlock.
