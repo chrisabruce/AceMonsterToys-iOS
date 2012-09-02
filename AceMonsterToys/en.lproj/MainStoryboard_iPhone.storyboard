@@ -164,11 +164,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="4eo-31-CGf">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Logo-Nav.png" id="TeO-rJ-hU5">
-                                    <rect key="frame" x="55" y="20" width="210" height="36"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="LogoBig.png" id="gm1-9c-MCP">
+                                    <rect key="frame" x="97" y="20" width="127" height="110"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </imageView>
                             </subviews>
@@ -178,7 +178,7 @@
                             <tableViewSection id="7st-tp-vMg">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="SlF-0V-cpr">
-                                        <rect key="frame" x="0.0" y="86" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="149" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="1" width="300" height="43"/>
@@ -205,7 +205,7 @@
                                         </view>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Rof-fQ-hV9">
-                                        <rect key="frame" x="0.0" y="131" width="320" height="45"/>
+                                        <rect key="frame" x="0.0" y="194" width="320" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="10" y="0.0" width="300" height="43"/>
@@ -281,7 +281,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Logo-Nav.png" width="210" height="36"/>
+        <image name="LogoBig.png" width="127" height="110"/>
     </resources>
     <classes>
         <class className="AMTBaseTableViewController" superclassName="UITableViewController">
