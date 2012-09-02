@@ -60,11 +60,6 @@
     // Release any retained subviews of the main view.
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    return YES;
-}
-
 - (IBAction)unlock:(id)sender {
     [self.pinTextField resignFirstResponder];
     

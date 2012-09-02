@@ -21,6 +21,7 @@
 		8320B60815F1272100AC14E7 /* AMTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8320B60715F1272100AC14E7 /* AMTAppDelegate.m */; };
 		8320B60B15F1272100AC14E7 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8320B60915F1272100AC14E7 /* MainStoryboard_iPhone.storyboard */; };
 		8320B60E15F1272100AC14E7 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8320B60C15F1272100AC14E7 /* MainStoryboard_iPad.storyboard */; };
+		838420FF15F3E7350042B05D /* AMTWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838420FE15F3E7350042B05D /* AMTWebViewController.m */; };
 		838CFD2415F145B200CAC266 /* AMTButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 838CFD1D15F145B200CAC266 /* AMTButton.m */; };
 		838CFD2515F145B200CAC266 /* AMTButtonDestructive.m in Sources */ = {isa = PBXBuildFile; fileRef = 838CFD1F15F145B200CAC266 /* AMTButtonDestructive.m */; };
 		838CFD2615F145B200CAC266 /* AMTOverlayLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 838CFD2115F145B200CAC266 /* AMTOverlayLayer.m */; };
@@ -86,6 +87,8 @@
 		8320B60A15F1272100AC14E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		8320B60D15F1272100AC14E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		8320B61B15F1272100AC14E7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		838420FD15F3E7350042B05D /* AMTWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTWebViewController.h; sourceTree = "<group>"; };
+		838420FE15F3E7350042B05D /* AMTWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTWebViewController.m; sourceTree = "<group>"; };
 		838CFD1C15F145B200CAC266 /* AMTButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTButton.h; sourceTree = "<group>"; };
 		838CFD1D15F145B200CAC266 /* AMTButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTButton.m; sourceTree = "<group>"; };
 		838CFD1E15F145B200CAC266 /* AMTButtonDestructive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTButtonDestructive.h; sourceTree = "<group>"; };
@@ -237,6 +240,7 @@
 				8320B60615F1272100AC14E7 /* AMTAppDelegate.h */,
 				8320B60715F1272100AC14E7 /* AMTAppDelegate.m */,
 				83F6EB5B15F12B5A001C9C56 /* Controllers */,
+				838420FB15F3E71D0042B05D /* Webview */,
 				83F6EB5015F12B5A001C9C56 /* Views */,
 				83F6EB5515F12B5A001C9C56 /* Services */,
 				83F6EB5715F12B5A001C9C56 /* Models */,
@@ -258,6 +262,16 @@
 				8320B60515F1272100AC14E7 /* AceMonsterToys-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		838420FB15F3E71D0042B05D /* Webview */ = {
+			isa = PBXGroup;
+			children = (
+				838420FD15F3E7350042B05D /* AMTWebViewController.h */,
+				838420FE15F3E7350042B05D /* AMTWebViewController.m */,
+			);
+			name = Webview;
+			path = Controllers/Webview;
 			sourceTree = "<group>";
 		};
 		83F6EB5015F12B5A001C9C56 /* Views */ = {
@@ -557,6 +571,7 @@
 				838CFD3215F147D000CAC266 /* NSDictionary+Util.m in Sources */,
 				838CFD3515F1489800CAC266 /* AMTDisplayHelper.m in Sources */,
 				838CFD4815F1698000CAC266 /* AMTUnlockViewController.m in Sources */,
+				838420FF15F3E7350042B05D /* AMTWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

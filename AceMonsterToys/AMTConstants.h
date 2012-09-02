@@ -31,8 +31,11 @@
 #define AMT_URL_LOGIN @"/node?destination=node"
 #define AMT_URL_UNLOCK @"/membership"
 
-#pragma mark - API Keys
+#define AMT_URL_ABOUT @"http://acemonstertoys.org"
+#define AMT_URL_UPCOMING @"https://www.google.com/calendar/render?cid=mtim8b2triatrns3gpkfn7m56o@group.calendar.google.com"
 
+#pragma mark - API Keys
+#define GOOGLE_CALENDAR_ID @"mtim8b2triatrns3gpkfn7m56o@group.calendar.google.com"
 
 #pragma mark - Helpers
 

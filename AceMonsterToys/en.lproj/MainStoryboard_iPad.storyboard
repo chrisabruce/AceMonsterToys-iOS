@@ -246,6 +246,9 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="IKu-vJ-8Ju" kind="replace" identifier="UpcomingSegue" splitViewControllerTargetIndex="1" id="LWO-Dx-hKn"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="0ME-MR-kVH" style="IBUITableViewCellStyleDefault" id="lTy-gH-2KO">
                                         <rect key="frame" x="0.0" y="55" width="320" height="45"/>
@@ -265,6 +268,9 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="IKu-vJ-8Ju" kind="replace" identifier="AboutSegue" splitViewControllerTargetIndex="1" id="m4w-W1-J83"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -313,6 +319,34 @@
             </objects>
             <point key="canvasLocation" x="821" y="-624"/>
         </scene>
+        <!--Web View Controller-->
+        <scene sceneID="Zkt-b6-54K">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oG6-jw-jpk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="IKu-vJ-8Ju" customClass="AMTWebViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ueu-D9-0p7">
+                        <rect key="frame" x="0.0" y="20" width="703" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" id="frs-iC-BN4">
+                                <rect key="frame" x="0.0" y="0.0" width="703" height="748"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AOn-bT-g6X"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <connections>
+                        <outlet property="webView" destination="frs-iC-BN4" id="Xab-oE-BL3"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1290" y="-687"/>
+        </scene>
     </scenes>
     <resources>
         <image name="LogoBig.png" width="127" height="110"/>
@@ -353,10 +387,19 @@
                 <relationship kind="outlet" name="unlockButton" candidateClass="UIBarButtonItem"/>
             </relationships>
         </class>
+        <class className="AMTWebViewController" superclassName="AMTBaseViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AMTWebViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="m4w-W1-J83"/>
+    </inferredMetricsTieBreakers>
 </document>
