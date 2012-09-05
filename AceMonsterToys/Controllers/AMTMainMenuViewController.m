@@ -58,6 +58,7 @@
     } else {
         self.navigationItem.rightBarButtonItem.title = NSLocalizedString(@"Login", nil);
     }
+    [self.tableView reloadData];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -123,6 +124,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    // Hide Members section if not logged in.
+    return [[AMTSession sharedSession] isActive] ? 2 : 1;
 }
 
 #pragma mark - SplitViewController Delegate
