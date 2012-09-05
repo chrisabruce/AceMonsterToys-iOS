@@ -30,10 +30,8 @@
 
 #define AMT_URL_LOGIN @"/node?destination=node"
 #define AMT_URL_UNLOCK @"/membership"
-
 #define AMT_URL_ABOUT @"http://acemonstertoys.org"
-
-#define AMT_URL_UPCOMING @"https://www.google.com/calendar/render?cid=mtim8b2triatrns3gpkfn7m56o@group.calendar.google.com"
+#define AMT_URL_WEBCAM @"http://acemonstertoys.org/webcam1"
 
 #define GOOGLE_URL_API_BASE @"https://www.googleapis.com"
 #define GOOGLE_URL_CALENDAR_EVENTS @"/calendar/v3/calendars/mtim8b2triatrns3gpkfn7m56o@group.calendar.google.com/events"
