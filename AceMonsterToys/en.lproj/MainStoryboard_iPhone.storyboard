@@ -51,7 +51,7 @@
                                         </view>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="mFl-Oe-xoi" kind="push" identifier="UpcomingSegue" id="OUs-q5-aMf"/>
+                                            <segue destination="Fa3-FG-nOO" kind="push" id="kIP-cP-AMW"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="r3O-Bk-0uT" style="IBUITableViewCellStyleDefault" id="54n-Uh-Ug7">
@@ -158,7 +158,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-3208" y="-5184"/>
+            <point key="canvasLocation" x="-3098" y="-4744"/>
         </scene>
         <!--Login View Controller - Member Login-->
         <scene sceneID="Q2X-d7-jTE">
@@ -267,6 +267,64 @@
             </objects>
             <point key="canvasLocation" x="-3585" y="-5848"/>
         </scene>
+        <!--Upcoming View Controller - Upcoming-->
+        <scene sceneID="LuI-sl-HuC">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X62-hP-tVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="Fa3-FG-nOO" customClass="AMTUpcomingViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" id="Xvd-9m-Ofd">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AMTEventCell" rowHeight="100" id="gsP-ch-eif" customClass="AMTEventCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="BlN-H5-DZy">
+                                            <rect key="frame" x="10" y="11" width="290" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                            <color key="textColor" red="0.4941176471" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="eaN-Dp-HVo">
+                                            <rect key="frame" x="10" y="30" width="290" height="19"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                            <color key="textColor" red="0.4941176471" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" id="zW5-Vm-vyE">
+                                            <rect key="frame" x="10" y="49" width="290" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                            <color key="textColor" red="0.4941176471" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="zW5-Vm-vyE" id="Hrq-NR-vmz"/>
+                                    <outlet property="infoLabel" destination="eaN-Dp-HVo" id="bbZ-dF-3cI"/>
+                                    <outlet property="titleLabel" destination="BlN-H5-DZy" id="ZDu-iH-NKw"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Fa3-FG-nOO" id="PTJ-Fd-p0a"/>
+                            <outlet property="delegate" destination="Fa3-FG-nOO" id="TLN-Hu-Pjt"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Upcoming" id="yBa-7x-RuR"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="-3102" y="-5914"/>
+        </scene>
         <!--Web View Controller-->
         <scene sceneID="kgm-yW-VM5">
             <objects>
@@ -291,7 +349,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-3206" y="-5743"/>
+            <point key="canvasLocation" x="-3098" y="-5321"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5Fe-zX-Gxs">
@@ -325,6 +383,14 @@
                 <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
             </relationships>
         </class>
+        <class className="AMTEventCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AMTEventCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="descriptionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="infoLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
         <class className="AMTLoginViewController" superclassName="AMTBaseTableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AMTLoginViewController.h"/>
             <relationships>
@@ -351,6 +417,9 @@
                 <relationship kind="outlet" name="unlockButton" candidateClass="UIBarButtonItem"/>
             </relationships>
         </class>
+        <class className="AMTUpcomingViewController" superclassName="AMTBaseTableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AMTUpcomingViewController.h"/>
+        </class>
         <class className="AMTWebViewController" superclassName="AMTBaseViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AMTWebViewController.h"/>
             <relationships>
@@ -363,7 +432,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="0DP-Z5-ELG"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -23,7 +23,7 @@
 
 + (NSString *)distanceToString:(double)distance;
 + (NSString *)stringFromDateLong:(NSDate *)date;
-+ (NSString *)stringYearFromDate:(NSDate *)date;
++ (NSString *)stringFromDate:(NSDate *)date;
 
 + (UIColor *)darkenColor:(UIColor *)color;
 

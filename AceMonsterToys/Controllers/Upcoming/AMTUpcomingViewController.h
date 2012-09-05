@@ -1,6 +1,6 @@
 /*************************************************************************
  
- Created by Chris Bruce on 8/31/12
+ Created by Chris Bruce on 9/4/2012
  Copyright (c) 2012 Chris Bruce & Ace Monster Toys, Inc.
  
  Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,19 +17,12 @@
  
  *************************************************************************/
 
+#import "AMTBaseTableViewController.h"
+#import "AMTGoogleAPIClient.h"
 
-#import "AMTClient.h"
+@interface AMTUpcomingViewController : AMTBaseTableViewController
 
-#import "AFHTTPRequestOperation.h"
-#import "AFJSONRequestOperation.h"
-
-@interface AMTAPIClient : AMTClient
-
-+ (id)sharedClient;
-
-- (void)loginWithUsername:(NSString *)username andPassword:(NSString *)password completionBlock:(AMTClientCompletion)completionBlock;
-
-- (void)unlockDoorWithPIN:(NSString *)PIN completionBlock:(AMTClientCompletion)completionBlock;
-
+@property (nonatomic, strong) NSArray *events;
+@property (readonly) AMTGoogleAPIClient *googleClient;
 
 @end

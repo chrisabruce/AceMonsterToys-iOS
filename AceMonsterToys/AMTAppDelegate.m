@@ -55,7 +55,7 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userDidLogout) name:kNotificationUserDidLogOut object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userDidLogin) name:kNotificationUserDidLogIn object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(authenticationDidFail:) name:kNotificationAPIClientAuthenticationFailure object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(authenticationDidFail:) name:kNotificationAMTClientAuthenticationFailure object:nil];
     
 //    if (!session.isActive) {
 //        // Cancel all app local notifications

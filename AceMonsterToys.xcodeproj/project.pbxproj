@@ -21,6 +21,8 @@
 		8320B60815F1272100AC14E7 /* AMTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8320B60715F1272100AC14E7 /* AMTAppDelegate.m */; };
 		8320B60B15F1272100AC14E7 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8320B60915F1272100AC14E7 /* MainStoryboard_iPhone.storyboard */; };
 		8320B60E15F1272100AC14E7 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8320B60C15F1272100AC14E7 /* MainStoryboard_iPad.storyboard */; };
+		8353173615F6BBDF0073BC00 /* AMTGoogleAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8353173515F6BBDF0073BC00 /* AMTGoogleAPIClient.m */; };
+		8353173A15F6CA180073BC00 /* AMTUpcomingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8353173915F6CA180073BC00 /* AMTUpcomingViewController.m */; };
 		838420FF15F3E7350042B05D /* AMTWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838420FE15F3E7350042B05D /* AMTWebViewController.m */; };
 		838CFD2415F145B200CAC266 /* AMTButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 838CFD1D15F145B200CAC266 /* AMTButton.m */; };
 		838CFD2515F145B200CAC266 /* AMTButtonDestructive.m in Sources */ = {isa = PBXBuildFile; fileRef = 838CFD1F15F145B200CAC266 /* AMTButtonDestructive.m */; };
@@ -37,6 +39,9 @@
 		838CFD4315F1645A00CAC266 /* gun_metal.png in Resources */ = {isa = PBXBuildFile; fileRef = 838CFD4115F1645A00CAC266 /* gun_metal.png */; };
 		838CFD4515F1649000CAC266 /* gun_metal@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 838CFD4415F1649000CAC266 /* gun_metal@2X.png */; };
 		838CFD4815F1698000CAC266 /* AMTUnlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838CFD4715F1698000CAC266 /* AMTUnlockViewController.m */; };
+		83DE70A715F6734E00BBBAD9 /* AMTClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DE70A615F6734E00BBBAD9 /* AMTClient.m */; };
+		83EA19C815F7C8460033DF11 /* AMTEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EA19C715F7C8460033DF11 /* AMTEventCell.m */; };
+		83EA19CC15F7CB6C0033DF11 /* AMTDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EA19CB15F7CB6C0033DF11 /* AMTDateHelper.m */; };
 		83F4179E15F3238F006C708A /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 83F4179D15F3238F006C708A /* iTunesArtwork */; };
 		83F417A115F32BAA006C708A /* LogoBig.png in Resources */ = {isa = PBXBuildFile; fileRef = 83F4179F15F32BAA006C708A /* LogoBig.png */; };
 		83F417A215F32BAA006C708A /* LogoBig@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 83F417A015F32BAA006C708A /* LogoBig@2x.png */; };
@@ -87,6 +92,10 @@
 		8320B60A15F1272100AC14E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		8320B60D15F1272100AC14E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		8320B61B15F1272100AC14E7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		8353173415F6BBDF0073BC00 /* AMTGoogleAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTGoogleAPIClient.h; sourceTree = "<group>"; };
+		8353173515F6BBDF0073BC00 /* AMTGoogleAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTGoogleAPIClient.m; sourceTree = "<group>"; };
+		8353173815F6CA180073BC00 /* AMTUpcomingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTUpcomingViewController.h; sourceTree = "<group>"; };
+		8353173915F6CA180073BC00 /* AMTUpcomingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTUpcomingViewController.m; sourceTree = "<group>"; };
 		838420FD15F3E7350042B05D /* AMTWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTWebViewController.h; sourceTree = "<group>"; };
 		838420FE15F3E7350042B05D /* AMTWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTWebViewController.m; sourceTree = "<group>"; };
 		838CFD1C15F145B200CAC266 /* AMTButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTButton.h; sourceTree = "<group>"; };
@@ -112,6 +121,12 @@
 		838CFD4415F1649000CAC266 /* gun_metal@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gun_metal@2X.png"; sourceTree = "<group>"; };
 		838CFD4615F1698000CAC266 /* AMTUnlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTUnlockViewController.h; sourceTree = "<group>"; };
 		838CFD4715F1698000CAC266 /* AMTUnlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTUnlockViewController.m; sourceTree = "<group>"; };
+		83DE70A515F6734E00BBBAD9 /* AMTClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTClient.h; sourceTree = "<group>"; };
+		83DE70A615F6734E00BBBAD9 /* AMTClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTClient.m; sourceTree = "<group>"; };
+		83EA19C615F7C8460033DF11 /* AMTEventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTEventCell.h; sourceTree = "<group>"; };
+		83EA19C715F7C8460033DF11 /* AMTEventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTEventCell.m; sourceTree = "<group>"; };
+		83EA19CA15F7CB6C0033DF11 /* AMTDateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTDateHelper.h; sourceTree = "<group>"; };
+		83EA19CB15F7CB6C0033DF11 /* AMTDateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTDateHelper.m; sourceTree = "<group>"; };
 		83F4179D15F3238F006C708A /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		83F4179F15F32BAA006C708A /* LogoBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LogoBig.png; sourceTree = "<group>"; };
 		83F417A015F32BAA006C708A /* LogoBig@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LogoBig@2x.png"; sourceTree = "<group>"; };
@@ -264,6 +279,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8353173715F6CA040073BC00 /* Upcoming */ = {
+			isa = PBXGroup;
+			children = (
+				8353173815F6CA180073BC00 /* AMTUpcomingViewController.h */,
+				8353173915F6CA180073BC00 /* AMTUpcomingViewController.m */,
+			);
+			path = Upcoming;
+			sourceTree = "<group>";
+		};
 		838420FB15F3E71D0042B05D /* Webview */ = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +317,8 @@
 		83F6EB5215F12B5A001C9C56 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				83EA19C615F7C8460033DF11 /* AMTEventCell.h */,
+				83EA19C715F7C8460033DF11 /* AMTEventCell.m */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -310,8 +336,12 @@
 		83F6EB5515F12B5A001C9C56 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				83DE70A515F6734E00BBBAD9 /* AMTClient.h */,
+				83DE70A615F6734E00BBBAD9 /* AMTClient.m */,
 				83F6EBC615F132C0001C9C56 /* AMTAPIClient.h */,
 				83F6EBC515F132C0001C9C56 /* AMTAPIClient.m */,
+				8353173415F6BBDF0073BC00 /* AMTGoogleAPIClient.h */,
+				8353173515F6BBDF0073BC00 /* AMTGoogleAPIClient.m */,
 				83F6EBC915F132C0001C9C56 /* AMTLocation.h */,
 				83F6EBC815F132C0001C9C56 /* AMTLocation.m */,
 				83F6EBCA15F132C0001C9C56 /* AMTSession.h */,
@@ -332,6 +362,8 @@
 			children = (
 				838CFD3315F1489800CAC266 /* AMTDisplayHelper.h */,
 				838CFD3415F1489800CAC266 /* AMTDisplayHelper.m */,
+				83EA19CA15F7CB6C0033DF11 /* AMTDateHelper.h */,
+				83EA19CB15F7CB6C0033DF11 /* AMTDateHelper.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -339,6 +371,7 @@
 		83F6EB5B15F12B5A001C9C56 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8353173715F6CA040073BC00 /* Upcoming */,
 				83F6EBDF15F1358E001C9C56 /* AMTBaseTableViewController.h */,
 				83F6EBE015F1358E001C9C56 /* AMTBaseTableViewController.m */,
 				83F6EBE115F1358E001C9C56 /* AMTBaseViewController.h */,
@@ -468,6 +501,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8320B62C15F1272100AC14E7 /* Build configuration list for PBXNativeTarget "AceMonsterToys" */;
 			buildPhases = (
+				83EA19CD15F7D98E0033DF11 /* ShellScript */,
 				8320B5EF15F1272100AC14E7 /* Sources */,
 				8320B5F015F1272100AC14E7 /* Frameworks */,
 				8320B5F115F1272100AC14E7 /* Resources */,
@@ -536,6 +570,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		83EA19CD15F7D98E0033DF11 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TARGET=\"$PROJECT_DIR/AceMonsterToys/AceMonsterToys-Info.plist\"\necho $TARGET\nif [ ! -f \"$TARGET\" ]; then\necho \"missing file $TARGET\"\nexit 1;\nfi\n#!/bin/bash\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$TARGET\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$TARGET\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8320B5EF15F1272100AC14E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -572,6 +622,11 @@
 				838CFD3515F1489800CAC266 /* AMTDisplayHelper.m in Sources */,
 				838CFD4815F1698000CAC266 /* AMTUnlockViewController.m in Sources */,
 				838420FF15F3E7350042B05D /* AMTWebViewController.m in Sources */,
+				83DE70A715F6734E00BBBAD9 /* AMTClient.m in Sources */,
+				8353173615F6BBDF0073BC00 /* AMTGoogleAPIClient.m in Sources */,
+				8353173A15F6CA180073BC00 /* AMTUpcomingViewController.m in Sources */,
+				83EA19C815F7C8460033DF11 /* AMTEventCell.m in Sources */,
+				83EA19CC15F7CB6C0033DF11 /* AMTDateHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,6 +717,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AceMonsterToys/AceMonsterToys-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				INFOPLIST_FILE = "AceMonsterToys/AceMonsterToys-Info.plist";
 				PRODUCT_NAME = AMT;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -675,6 +731,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AceMonsterToys/AceMonsterToys-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				INFOPLIST_FILE = "AceMonsterToys/AceMonsterToys-Info.plist";
 				PRODUCT_NAME = AMT;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";

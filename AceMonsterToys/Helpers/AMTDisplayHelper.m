@@ -44,14 +44,14 @@
     return [__dateFormatterLong stringFromDate:date];
 }
 
-+ (NSString *)stringYearFromDate:(NSDate *)date
++ (NSString *)stringFromDate:(NSDate *)date
 {
-    static NSDateFormatter *__dateFormatterYear;
-    if (__dateFormatterYear == nil) {
-        __dateFormatterYear = [[NSDateFormatter alloc] init];
-        __dateFormatterYear.dateFormat = @"yyyy";
+    static NSDateFormatter *__dateFormatter;
+    if (__dateFormatter == nil) {
+        __dateFormatter = [[NSDateFormatter alloc] init];
+        __dateFormatter.dateFormat = @"cccc MMM d";
     }
-    return [__dateFormatterYear stringFromDate:date];
+    return [__dateFormatter stringFromDate:date];
 }
 
 + (UIColor *)darkenColor:(UIColor *)color
