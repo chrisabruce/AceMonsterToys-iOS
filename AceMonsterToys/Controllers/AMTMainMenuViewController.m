@@ -91,22 +91,31 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     [self.popoverController dismissPopoverAnimated:YES];
     
+    UIViewController *destinationController = segue.destinationViewController;
+    UINavigationController *navigationController;
+    
+    if ([segue.destinationViewController isKindOfClass:[UINavigationController class]]) {
+        navigationController = segue.destinationViewController;
+    }
+    
+    
+    if (navigationController) {
+        destinationController = [navigationController.viewControllers objectAtIndex:0];
+    }
+    
+    
     if ([@"AboutSegue" isEqualToString:segue.identifier]) {
-        AMTWebViewController *controller = segue.destinationViewController;
+        AMTWebViewController *controller = (AMTWebViewController *)destinationController;
         controller.URL = [NSURL URLWithString:AMT_URL_ABOUT];
         controller.title = NSLocalizedString(@"About Us", nil);
         
     } else if ([@"UpcomingSegue" isEqualToString:segue.identifier]) {
-        AMTWebViewController *controller = segue.destinationViewController;
+        AMTWebViewController *controller = (AMTWebViewController *)destinationController;
         NSMutableString *html = [NSMutableString stringWithString:@"<html><head><title>Upcoming Events</title></head><html>"];
         [html appendString:@"<iframe src=\"https://www.google.com/calendar/embed?showTitle=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23e7e2d9&amp;src=mtim8b2triatrns3gpkfn7m56o%40group.calendar.google.com&amp;color=%23BE6D00&amp;ctz=America%2FLos_Angeles\" width=\"100%\" height=\"400\" frameborder=\"0\" scrolling=\"no\" style=\" border:solid 1px #777 \"></iframe></html>"];
         controller.html = html;
         controller.title = NSLocalizedString(@"Upcoming Events", nil);
         
-    } else if ([@"WebcamSegue" isEqualToString:segue.identifier]) {
-        AMTWebViewController *controller = segue.destinationViewController;
-        controller.URL = [NSURL URLWithString:AMT_URL_WEBCAM];
-        controller.title = @"Webcam";
     }
 }
 

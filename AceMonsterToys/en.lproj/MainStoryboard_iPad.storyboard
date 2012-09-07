@@ -18,7 +18,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="448" y="-630"/>
+            <point key="canvasLocation" x="-2248" y="-3950"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="18">
@@ -34,7 +34,7 @@
                     </connections>
                 </splitViewController>
             </objects>
-            <point key="canvasLocation" x="-687" y="-630"/>
+            <point key="canvasLocation" x="-3383" y="-3950"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="50">
@@ -49,7 +49,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="-366" y="248"/>
+            <point key="canvasLocation" x="-3062" y="-3072"/>
         </scene>
         <!--Login View Controller - Member Login-->
         <scene sceneID="IWu-L7-tPG">
@@ -157,7 +157,7 @@
                     </connections>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="195" y="-1968"/>
+            <point key="canvasLocation" x="-2477" y="-5284"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SIv-qo-AYM">
@@ -176,7 +176,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="-731" y="-1980"/>
+            <point key="canvasLocation" x="-3427" y="-5300"/>
         </scene>
         <!--Unlock View Controller - Detail-->
         <scene sceneID="ctZ-3i-Ygz">
@@ -213,7 +213,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="448" y="256"/>
+            <point key="canvasLocation" x="-2248" y="-3064"/>
         </scene>
         <!--Main Menu View Controller - Master-->
         <scene sceneID="gHD-dF-BCI">
@@ -290,7 +290,7 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <connections>
-                                            <segue destination="IKu-vJ-8Ju" kind="replace" identifier="WebcamSegue" splitViewControllerTargetIndex="1" id="MKw-hR-bc9"/>
+                                            <segue destination="eiT-Qd-unO" kind="replace" identifier="WebcamSegue" splitViewControllerTargetIndex="1" id="X3t-oa-QJQ"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -341,7 +341,7 @@
                     </connections>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="821" y="-624"/>
+            <point key="canvasLocation" x="-1875" y="-3944"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="Zkt-b6-54K">
@@ -369,7 +369,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1368" y="-197"/>
+            <point key="canvasLocation" x="-1404" y="-3377"/>
         </scene>
         <!--Upcoming View Controller - Upcoming-->
         <scene sceneID="fbg-tk-yVs">
@@ -429,7 +429,7 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="2090" y="-1445"/>
+            <point key="canvasLocation" x="-606" y="-4765"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NuG-Po-5je">
@@ -447,7 +447,61 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="1292" y="-1432"/>
+            <point key="canvasLocation" x="-1404" y="-4752"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bAZ-Ia-RpT">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qh0-TJ-L4H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="eiT-Qd-unO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="67D-8y-H6n">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sk6-th-4CA" kind="relationship" relationship="rootViewController" id="SSz-fm-K00"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-526" y="-3894"/>
+        </scene>
+        <!--Cam View Controller - Webcam-->
+        <scene sceneID="LsL-YJ-dL1">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2wC-9E-jFY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="sk6-th-4CA" customClass="AMTCamViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5fM-oy-i6p">
+                        <rect key="frame" x="0.0" y="64" width="703" height="704"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="GZq-0x-d0J">
+                                <rect key="frame" x="0.0" y="0.0" width="703" height="704"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="PBZ-bg-4U7" customClass="AMTRoundedImageView">
+                                        <rect key="frame" x="5" y="5" width="693" height="520"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <connections>
+                                    <outlet property="delegate" destination="sk6-th-4CA" id="Ms7-5T-CLX"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Webcam" id="5e2-YU-u17"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <connections>
+                        <outlet property="imageView" destination="PBZ-bg-4U7" id="aol-r8-7Ka"/>
+                        <outlet property="scrollView" destination="GZq-0x-d0J" id="taZ-g8-60h"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="222" y="-3883"/>
         </scene>
     </scenes>
     <resources>
@@ -460,6 +514,13 @@
         <class className="AMTBaseViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AMTBaseViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="AMTCamViewController" superclassName="AMTBaseViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AMTCamViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
             </relationships>
         </class>
@@ -489,6 +550,9 @@
                 <relationship kind="outlet" name="popoverButton" candidateClass="UIBarButtonItem"/>
             </relationships>
         </class>
+        <class className="AMTRoundedImageView" superclassName="UIImageView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AMTRoundedImageView.h"/>
+        </class>
         <class className="AMTUnlockViewController" superclassName="AMTBaseViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AMTUnlockViewController.h"/>
             <relationships>
@@ -514,6 +578,5 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="FpD-UR-gy4"/>
-        <segue reference="MKw-hR-bc9"/>
     </inferredMetricsTieBreakers>
 </document>

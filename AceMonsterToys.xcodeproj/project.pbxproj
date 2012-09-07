@@ -39,6 +39,7 @@
 		838CFD4315F1645A00CAC266 /* gun_metal.png in Resources */ = {isa = PBXBuildFile; fileRef = 838CFD4115F1645A00CAC266 /* gun_metal.png */; };
 		838CFD4515F1649000CAC266 /* gun_metal@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 838CFD4415F1649000CAC266 /* gun_metal@2X.png */; };
 		838CFD4815F1698000CAC266 /* AMTUnlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838CFD4715F1698000CAC266 /* AMTUnlockViewController.m */; };
+		83994E6B15F914CA004CA581 /* AMTCamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83994E6A15F914CA004CA581 /* AMTCamViewController.m */; };
 		83DE70A715F6734E00BBBAD9 /* AMTClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DE70A615F6734E00BBBAD9 /* AMTClient.m */; };
 		83EA19C815F7C8460033DF11 /* AMTEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EA19C715F7C8460033DF11 /* AMTEventCell.m */; };
 		83EA19CC15F7CB6C0033DF11 /* AMTDateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 83EA19CB15F7CB6C0033DF11 /* AMTDateHelper.m */; };
@@ -121,6 +122,8 @@
 		838CFD4415F1649000CAC266 /* gun_metal@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gun_metal@2X.png"; sourceTree = "<group>"; };
 		838CFD4615F1698000CAC266 /* AMTUnlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTUnlockViewController.h; sourceTree = "<group>"; };
 		838CFD4715F1698000CAC266 /* AMTUnlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTUnlockViewController.m; sourceTree = "<group>"; };
+		83994E6915F914CA004CA581 /* AMTCamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTCamViewController.h; sourceTree = "<group>"; };
+		83994E6A15F914CA004CA581 /* AMTCamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTCamViewController.m; sourceTree = "<group>"; };
 		83DE70A515F6734E00BBBAD9 /* AMTClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTClient.h; sourceTree = "<group>"; };
 		83DE70A615F6734E00BBBAD9 /* AMTClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMTClient.m; sourceTree = "<group>"; };
 		83EA19C615F7C8460033DF11 /* AMTEventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMTEventCell.h; sourceTree = "<group>"; };
@@ -298,6 +301,15 @@
 			path = Controllers/Webview;
 			sourceTree = "<group>";
 		};
+		83994E6815F914CA004CA581 /* WebCam */ = {
+			isa = PBXGroup;
+			children = (
+				83994E6915F914CA004CA581 /* AMTCamViewController.h */,
+				83994E6A15F914CA004CA581 /* AMTCamViewController.m */,
+			);
+			path = WebCam;
+			sourceTree = "<group>";
+		};
 		83F6EB5015F12B5A001C9C56 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -371,16 +383,17 @@
 		83F6EB5B15F12B5A001C9C56 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8353173715F6CA040073BC00 /* Upcoming */,
 				83F6EBDF15F1358E001C9C56 /* AMTBaseTableViewController.h */,
 				83F6EBE015F1358E001C9C56 /* AMTBaseTableViewController.m */,
 				83F6EBE115F1358E001C9C56 /* AMTBaseViewController.h */,
 				83F6EBE215F1358E001C9C56 /* AMTBaseViewController.m */,
-				83F6EBE315F1358E001C9C56 /* AMTMainMenuViewController.h */,
-				83F6EBE415F1358E001C9C56 /* AMTMainMenuViewController.m */,
 				83FCA11F15F143690073A06C /* AMTLoginViewController.h */,
 				83FCA12015F143690073A06C /* AMTLoginViewController.m */,
+				83F6EBE315F1358E001C9C56 /* AMTMainMenuViewController.h */,
+				83F6EBE415F1358E001C9C56 /* AMTMainMenuViewController.m */,
 				83F6EB5D15F12B5A001C9C56 /* Unlocker */,
+				8353173715F6CA040073BC00 /* Upcoming */,
+				83994E6815F914CA004CA581 /* WebCam */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -627,6 +640,7 @@
 				8353173A15F6CA180073BC00 /* AMTUpcomingViewController.m in Sources */,
 				83EA19C815F7C8460033DF11 /* AMTEventCell.m in Sources */,
 				83EA19CC15F7CB6C0033DF11 /* AMTDateHelper.m in Sources */,
+				83994E6B15F914CA004CA581 /* AMTCamViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

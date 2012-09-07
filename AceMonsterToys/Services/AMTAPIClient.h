@@ -31,5 +31,6 @@
 
 - (void)unlockDoorWithPIN:(NSString *)PIN completionBlock:(AMTClientCompletion)completionBlock;
 
+- (void)webcamImageWithCompletionBlock:(AMTClientCompletion)completionBlock;
 
 @end

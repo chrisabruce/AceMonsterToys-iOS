@@ -63,6 +63,11 @@
     [self postPath:AMT_URL_UNLOCK parameters:params completionBlock:completionBlock];
 }
 
+- (void)webcamImageWithCompletionBlock:(AMTClientCompletion)completionBlock
+{
+    [self getPath:AMT_URL_WEBCAM parameters:nil completionBlock:completionBlock];
+}
+
 
 
 @end
